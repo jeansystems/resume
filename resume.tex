@@ -1,129 +1,124 @@
-\documentclass[centered]{res}
-\textwidth=6.0in % increase textwidth to get smaller right margin
-%\topmargin=-0.50in
+\documentclass[line]{res}
 \usepackage{enumitem}
-\setlist{itemsep=-2pt,topsep=-2pt,leftmargin=5.0mm}
-%\textheight=11in
-
-
-
-
+%looking for a font that shows a nice capital J
+%\usepackage[sfdefault,light,condensed]{roboto}
+%\usepackage[light]{kpfonts}
+\usepackage[charter]{mathdesign}
+\usepackage[T1]{fontenc} %necessary package for pipe symbol
+%finicky spacing to keep items on page
+\setlist{itemsep=-2pt,topsep=-2pt,leftmargin=12pt}
+\usepackage[bottom=0.5in,top=1in]{geometry}
+%leaving this bit of code here in case I want to build a table of keywords for any index sites
 \makeatletter
 \def\@tablebox#1{\begin{tabular}[t]{@{}c@{\extracolsep{\fill}}}#1\end{tabular}}
 \makeatother
 
 \begin{document}
 
-\name{\LARGE \bf Tanner Jean}
+\name{\LARGE \bf \textsc{Tanner Jean}}
 
-%\address{{\bf Address } \\ 2233 Ashley Dr. \\ Oklahoma City, OK  \\ }
-\address{Oklahoma City, OK \\ trjean.ou@gmail.com \\ (580) 304-6896 }
+\address{Oklahoma City, OK $\parallel$ trjean.ou@gmail.com $\parallel$ (580) 304-6896}
 
 \begin{resume}
-	
+
 \section{Background}
 \emph{Lifelong learner with a multi-faceted technical background. Proficient in communicating with users and providing effective, standardized, and documented solutions. I enjoy tinkering and honing my skills, and am especially interested in configuration management, virtualization, and storage systems.}
-\vspace{-24pt}
-%\begin{itemize}
-%	\item{Tinkering with Linux and home labs}
-%\end{itemize}
+
 \section{Work Experience}
 \textbf{IT Systems Analyst -- Oklahoma City Thunder}
 \newline
 \textbf{January 2018-Present}
-
-
-\begin{itemize}
-\item Systems administrator for three locations and various cloud platforms
-\item Actively administrates, maintains, and configures:
 	\begin{itemize}
-		\item Windows domain environment: AD, GPO, DNS, DCHP
-		\item Azure, Azure AD, O365 
-		\item Windows servers: Hyper-V clustering, ADFS, NTFS file shares, WDS/MDT
-		\item Linux application servers: Zabbix, R Studio and Shiny Server development servers
-		\item Avid media environment and third-party video conversion and logging software
-		\item SAN, RAID, and JBoD storage: EqualLogic, Dell MD series
-		\item PDQ Deploy and Inventory, custom software packages, scripts, and collections
-		\item Veeam Backup and Replication Console and Agents
-		\item Backup and Disaster Recovery infrastructure
-		\item FortiGate firewalls: HA clustering, firmware, and policies
-		\item Duo 2FA policies and implementations for users and RDP
-		\item SaaS solutions: Box, Connectwise Control, FreshDesk
-		\item Cisco network environment: deployment, patching, and VLAN management		
-		\item AWS EC2 instances and Route 53 DNS
+		\item Systems administrator for three locations and various cloud platforms
+		\item Actively administrates, maintains, and configures:
+			\begin{itemize}
+				\item Windows domain environment: AD, GPO, DNS, DCHP
+				\item Azure, Azure AD, O365 
+				\item Windows servers: Hyper-V clustering, ADFS, NTFS file shares, WDS/MDT
+				\item Linux application servers: Zabbix, R Studio and Shiny Server development servers
+				\item Avid media environment and third-party video conversion and logging software
+				\item SAN, RAID, and JBoD storage: EqualLogic, Dell MD series
+				\item PDQ Deploy and Inventory, custom software packages, scripts, and collections
+				\item Veeam Backup and Replication Console and Agents
+				\item Backup and Disaster Recovery infrastructure
+				\item FortiGate firewalls: HA clustering, firmware, and policies
+				\item Duo 2FA policies and implementations for users and RDP
+				\item SaaS solutions: Box, Connectwise Control, FreshDesk
+				\item Cisco network environment: deployment, patching, and VLAN management		
+				\item AWS EC2 instances and Route 53 DNS
+			\end{itemize}
+		\item Implements PowerShell automation
+			\begin{itemize}
+				\item Created and maintains Windows 10 image with user-focused customizations and departmental software packages
+				\item Re-structured Active Directory and created new GPOs for Windows 10 migration
+				\item Wrote modular Powershell function to push PDQ packages during WDS/MDT imaging
+				\item Configures servers and clients remotely using PSRemoting
+				\item Maintains user account creation script, including syncing accounts to O365
+				\item Writes on-the-fly scripts for data collection
+				\item Writes scripts for custom software installations for error handling and sanity checks
+			\end{itemize}
+		\item Orchestrates Linux servers through shell scripting
+			\begin{itemize}
+				\item Automated bulk account creation and enforced password resets on Linux servers
+				\item Created \texttt{ssh} key-based \texttt{rsync} backup job
+				\item Works in \texttt{vi/vim} to create scripts and edit configuration files
+				\item Troubleshoots storage and system resource usage to assist development team
+			\end{itemize}
+		\item Directs infrastructure setup and tear down for all Thunder live events
+			\begin{itemize}
+				\item Manages and trains game day employees
+				\item Troubleshoots technology that controls data to the scoreboard, TV trucks, and various equipment arena-wide
+				\item Sets up and tears down an array of equipment responsible for clock feed and statistics
+				\item Primary point of contact for NBA on statistics laptops, referee equipment, and NBA.tv player interviews, plus on-prem network infrastructure directly connected to NBA headquarters 
+				\item Regularly tests redundancy, maintains SOPs, and coordinates with event-level employees, including arena management and entertainment personnel
+				\item Co-coordinates with NBA and facility for ongoing major network upgrade, including centralization of Thunder network assets in shared IDF 
+			\end{itemize}
+		\item Tests and purchases new IT technologies to keep environment up-to-date
+		\item Creates internal and user documentation for technical procedures 
+		\item Supports users as an escalated contact, continuing to provide standardized, long-term solutions
 	\end{itemize}
-\item Implements PowerShell automation
-	\begin{itemize}
-	\item Created and maintains Windows 10 image with user-focused customizations and departmental software packages
-	\item Re-structured Active Directory and created new GPOs for Windows 10 migration
-	\item Wrote modular Powershell function to push PDQ packages during WDS/MDT imaging
-	\item Configures servers and clients remotely using PSRemoting
-	\item Maintains user account creation script, including syncing accounts to O365
-	\item Writes on-the-fly scripts for data collection
-	\item Writes scripts for custom software installations for error handling and sanity checks
-	\end{itemize}
-\item Orchestrates Linux servers through shell scripting
-	\begin{itemize}
-		\item Automated bulk account creation and enforced password resets on Linux servers
-		\item Created \texttt{ssh} key-based \texttt{rsync} backup job
-		\item Works in \texttt{vi/vim} to create scripts and edit configuration files
-		\item Troubleshoots storage and system resource usage to assist development team
-	\end{itemize}
-\item Directs infrastructure setup and tear down for all Thunder live events
-	\begin{itemize}
-	\item Manages and trains game day employees
-	\item Troubleshoots technology that controls data to the scoreboard, TV trucks, and various equipment arena-wide
-	\item Sets up and tears down an array of equipment responsible for clock feed and statistics
-	\item Primary point of contact for NBA on statistics laptops, referee equipment, and NBA.tv player interviews, plus on-prem network infrastructure directly connected to NBA headquarters 
-	\item Regularly tests redundancy, maintains SOPs, and coordinates with event-level employees, including arena management and entertainment personnel
-	\item Co-coordinates with NBA and facility for ongoing major network upgrade, including centralization of Thunder network assets in shared IDF 
-	\end{itemize}
-\item Tests and purchases new IT technologies to keep environment up-to-date
-\item Creates internal and user documentation for technical procedures 
-\item Supports users as an escalated contact, continuing to provide standardized, long-term solutions
-\end{itemize}
 \textbf{Desktop/Application Support -- ECS Federal, LLC}
 \newline
 \textbf{August 2017-January 2018}
-\begin{itemize}
-\item Acted as helpdesk contact for nationwide maintenance machine technicians
-\item Primary desktop roles included ticket coordination, inventory management, and project assistance
-\item Ensured compliance with USPS-defined security protocol
-\item Assisted with server and infrastructure moves
-\item Created Powershell scripts to troubleshoot, parse AD information, and execute remote processes
-\end{itemize}
+	\begin{itemize}
+		\item Acted as helpdesk contact for nationwide maintenance machine technicians
+		\item Primary desktop roles included ticket coordination, inventory management, and project assistance
+		\item Ensured compliance with USPS-defined security protocol
+		\item Assisted with server and infrastructure moves
+		\item Created Powershell scripts to troubleshoot, parse AD information, and execute remote processes
+	\end{itemize}
 \textbf{IT Support Specialist -- Oklahoma Heart Hospital}
 \newline
 \textbf{June 2015-August 2017}
-\begin{itemize}
-	\item Produced long-term results for end-users in complex IT environment
-	\item Built relationships with doctors and staff to provide informed and context-aware support
-	\item Provided field support for clinical environment, hospital, cath labs, and surgery suites
-		\begin{itemize}
-			\item Supported workstations and laptops with remote access, network, and admin tools
-			\item Communicated with users to understand processes and evaluate IT solutions
-			\item Educated users on standard procedure, security protocol, and newly implemented technologies
-			\item Basic help-desk troubleshooting with Dameware, VNC, RDP
-			\item Tracked and prioritized tickets using ServiceDesk
-			\item Assisted with document creation in Microsoft Office, presentations (including Telepresence) and media conversion/playback
-			\item Network printer troubleshooting and management; deployed printers using PrinterLogic (user-based or security group deployments) and print servers
-			\item Active Directory modifications, creation of test accounts, experience with organizational units for specific-purpose workstations
-			\item Traced and moved network lines, worked with netops team managing VLANs and DNS
+	\begin{itemize}
+		\item Produced long-term results for end-users in complex IT environment
+		\item Built relationships with doctors and staff to provide informed and context-aware support
+		\item Provided field support for clinical environment, hospital, cath labs, and surgery suites
+			\begin{itemize}
+				\item Supported workstations and laptops with remote access, network, and admin tools
+				\item Communicated with users to understand processes and evaluate IT solutions
+				\item Educated users on standard procedure, security protocol, and newly implemented technologies
+				\item Basic help-desk troubleshooting with Dameware, VNC, RDP
+				\item Tracked and prioritized tickets using ServiceDesk
+				\item Assisted with document creation in Microsoft Office, presentations (including Telepresence) and media conversion/playback
+				\item Network printer troubleshooting and management; deployed printers using PrinterLogic (user-based or security group deployments) and print servers
+				\item Active Directory modifications, creation of test accounts, experience with organizational units for specific-purpose workstations
+				\item Traced and moved network lines, worked with netops team managing VLANs and DNS
 			\end{itemize}		
-	\item Gained server and enterprise data center experience
-		\begin{itemize}
-			\item Assisted with installation and decommissioning of servers; cleaned and organized data center and communication closets
-			\item Managed and deployed thin clients using Xcalibur and Dell WYSE
-			\item Seamlessly replaced LRS paging system from Windows Server 2003 to 2012 R2 and implemented new transmitter infrastructure
-		\end{itemize}
-	\item Troubleshot Citrix Receiver and VM hosts
-	\item Worked with highly-specialized lab, Cerner EMR, and business software
-	\item Escalation point for help desk; experience troubleshooting over phone and in-person
-	\item Front-line of communication and troubleshooting; collected info and worked alongside network, security, clinical, and server administration teams
-	\item Participated and co-coordinated in large installation projects and remodels
-	\item Installed and troubleshot mobile management applications (MobileIron, Airwatch)
-	\item{Employed June 2015 - Present}
-\end{itemize}
+		\item Gained server and enterprise data center experience
+			\begin{itemize}
+				\item Assisted with installation and decommissioning of servers; cleaned and organized data center and communication closets
+				\item Managed and deployed thin clients using Xcalibur and Dell WYSE
+				\item Seamlessly replaced LRS paging system from Windows Server 2003 to 2012 R2 and implemented new transmitter infrastructure
+			\end{itemize}
+		\item Troubleshot Citrix Receiver and VM hosts
+		\item Worked with highly-specialized lab, Cerner EMR, and business software
+		\item Escalation point for help desk; experience troubleshooting over phone and in-person
+		\item Front-line of communication and troubleshooting; collected info and worked alongside network, security, clinical, and server administration teams
+		\item Participated and co-coordinated in large installation projects and remodels
+		\item Installed and troubleshot mobile management applications (MobileIron, Airwatch)
+		\item{Employed June 2015 - Present}
+	\end{itemize}
 \textbf{IT Assistant -- College of Arts \& Sciences, University of Oklahoma}
 \newline
 \textbf{Nov 2013-April 2015}
@@ -137,7 +132,6 @@
 			\item Prepared Linux workstation for scientific instruments (e.g. electron microscope)
 		\end{itemize}
 	\item Gained experience in a dynamic environment providing opportunities for training, self-management, and teamwork across large Norman campus
-%	\item Employed Nov 2013 - April 2015
 \end{itemize}
 
 \section{Education}
