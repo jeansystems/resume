@@ -6,7 +6,8 @@
 \usepackage[charter]{mathdesign}
 \usepackage[T1]{fontenc} %necessary package for pipe symbol
 %finicky spacing to keep items on page
-\setlist{itemsep=-2pt,topsep=-2pt,leftmargin=12pt}
+\setlist{itemsep=-2.5pt,topsep=-2pt,leftmargin=12pt}
+\linespread{}
 \usepackage[bottom=0.5in,top=1in]{geometry}
 %leaving this bit of code here in case I want to build a table of keywords for any index sites
 \makeatletter
@@ -28,41 +29,46 @@
 \textbf{IT Systems Analyst -- Oklahoma City Thunder}
 \newline
 \textbf{January 2018-Present}
+
+
 	\begin{itemize}
-		\item Systems administrator for three locations and various cloud platforms
+		\item Systems administrator for network, server, and storage equipment spanning three metro locations
 		\item Actively administrates, maintains, and configures:
 			\begin{itemize}
-				\item Windows domain environment: AD, GPO, DNS, DHCP
-				\item Azure, Azure AD, O365 
-				\item Windows servers: Hyper-V clustering, ADFS, NTFS file shares, WDS/MDT
-				\item Linux application servers: Zabbix, R Studio and Shiny Server development servers
-				\item Avid media environment and third-party video conversion and logging software
-				\item SAN, RAID, and JBoD storage: EqualLogic, Dell MD series
-				\item PDQ Deploy and Inventory, custom software packages, scripts, and collections
-				\item Veeam Backup and Replication Console and Agents
-				\item Backup and Disaster Recovery infrastructure
-				\item FortiGate firewalls: HA clustering, firmware, and policies
-				\item Duo 2FA policies and implementations for users and RDP
+				\item Windows domain and hybrid environment
+				\item Linux application servers (Ubuntu, CentOS, Red Hat): Zabbix, R Studio and Shiny Server
+				\item SAN, RAID, and JBoD storage: EqualLogic and Unity arrays
+				\item Cisco network environment: deployment and VLAN management
+				\item AWS EC2 instances, S3 buckets, and Route 53 DNS			
+				\item Avid media environment: proprietary storage and software support
+				\item Veeam Backup and Replication Console \& disaster recovery infrastructure
+				\item FortiGate firewalls: HA clustering, firmware, and security policies
+				\item Duo 2FA policies and implementation for users and RDP
 				\item SaaS solutions: Box, Connectwise Control, FreshDesk
-				\item Cisco network environment: deployment, patching, and VLAN management		
-				\item AWS EC2 instances and Route 53 DNS
 			\end{itemize}
-		\item Implements PowerShell automation
+		\item Performs various IT projects:
 			\begin{itemize}
-				\item Created and maintains Windows 10 image with user-focused customizations and departmental software packages
-				\item Re-structured Active Directory and created new GPOs for Windows 10 migration
-				\item Wrote modular Powershell function to push PDQ packages during WDS/MDT imaging
-				\item Configures servers and clients remotely using PSRemoting
-				\item Maintains user account creation script, including syncing accounts to O365
-				\item Writes on-the-fly scripts for data collection
-				\item Writes scripts for custom software installations for error handling and sanity checks
+				\item Created and maintains Windows 10 image with user-focused customization and departmental software packages
+				\item Wrote modular PowerShell function for fully automated PDQ deployment as part of WDS/MDT task sequence
+				\item Restructured Active Directory and Created new GPOs 
+				\item Decommissioned Exchange 2010 server and configured Exchange Hybrid
+				\item Upgraded AD FS from Server 2012 R2 to 2019 to leverage user feature requests
+				\item Converted physical Linux machine to virtual on ESXi as part of ongoing ESXi consolidation
+				\item Installed and configured Dell EMC Unity and migrated shares from previous NAS
+				\item Re-structured Veeam backups to create one centralized Backup \& Replication console
+				\item Implemented HTTPS on Ubuntu development servers
+				\item Creates and secures Amazon S3 buckets for Business Intelligence and third-party providers
 			\end{itemize}
-		\item Orchestrates Linux servers through shell scripting
+		\item Practices other systems administrator skills and proficiencies
 			\begin{itemize}
-				\item Automated bulk account creation and enforced password resets on Linux servers
-				\item Created \texttt{ssh} key-based \texttt{rsync} backup job
-				\item Works in \texttt{vi/vim} to create scripts and edit configuration files
-				\item Troubleshoots storage and system resource usage to assist development team
+				\item Coordinates with diverse array of departments to understand technical needs and develop context-aware and highly available solutions  
+				\item Maintains and builds monitoring servers (Nagios, Dashing, CheckMK)
+				\item Makes recommendations for performance and packages in Linux development environment
+				\item Works in \texttt{bash} and \texttt{vi/vim} for Linux troubleshooting
+				\item Assists with MacOS and Jamf administration from a Unix perspective
+				\item Writes PowerShell scripts on-the-fly for quick data collection
+				\item Tests and purchases new IT technologies to keep environment up-to-date
+				\item Creates internal and user documentation for technical procedures
 			\end{itemize}
 		\item Directs infrastructure setup and tear down for all Thunder live events
 			\begin{itemize}
@@ -73,10 +79,7 @@
 				\item Regularly tests redundancy, maintains SOPs, and coordinates with event-level employees, including arena management and entertainment personnel
 				\item Co-coordinates with NBA and facility for ongoing major network upgrade, including centralization of Thunder network assets in shared IDF 
 			\end{itemize}
-		\item Tests and purchases new IT technologies to keep environment up-to-date
-		\item Creates internal and user documentation for technical procedures 
-		\item Supports users as an escalated contact, continuing to provide standardized, long-term solutions
-	\end{itemize}
+	\end{itemize} 
 \textbf{Desktop/Application Support -- ECS Federal, LLC}
 \newline
 \textbf{August 2017-January 2018}
@@ -123,7 +126,7 @@
 \textbf{Nov 2013-April 2015}
 \begin{itemize}
 	\item Worked as student IT support staff for professors, graduate students, and departments
-	\item Performed hardware maintenance including:
+	\item Provided hardware and software support:
 		\begin{itemize}
 			\item Repaired and supported workstations (PC and Mac) and printers
 			\item Data and password retrieval; data security and erasure
