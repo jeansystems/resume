@@ -2,18 +2,12 @@
 \documentclass[line]{res}
 \usepackage{enumitem}
 %looking for a font that shows a nice capital J
-%\usepackage[sfdefault,light,condensed]{roboto}
-%\usepackage[light]{kpfonts}
 \usepackage[charter]{mathdesign}
 \usepackage[T1]{fontenc} %necessary package for pipe symbol
 %finicky spacing to keep items on page
 \setlist{itemsep=-2.5pt,topsep=-2pt,leftmargin=12pt}
 \linespread{}
 \usepackage[bottom=0.5in,top=1in]{geometry}
-%leaving this bit of code here in case I want to build a table of keywords for any index sites
-\makeatletter
-\def\@tablebox#1{\begin{tabular}[t]{@{}c@{\extracolsep{\fill}}}#1\end{tabular}}
-\makeatother
 
 \begin{document}
 
@@ -23,127 +17,95 @@
 
 \begin{resume}
 
-\section{Background}
-\emph{Lifelong learner with a multi-faceted technical background. Proficient in communicating with users and providing effective, standardized, and documented solutions. I enjoy tinkering and honing my skills, and am especially interested in configuration management, automation, and growing my skills in the cloud.}
-
 \section{Work Experience}
 
-\textbf{IT Systems Administrator -- GlobalHealth}
+\textbf{Systems Administrator -- University of Oklahoma Health Sciences Center}
+\newline
+\textbf{Oct 2023-Present}
+	\begin{itemize}
+	\item Administers array of Linux servers used by university departments for various purposes
+	\item Patches servers using Ansible configuration files
+	\item Diagnoses and resolves issues with code on web servers: HTML, PHP, Perl
+	\item Updates code base for reporting tools on Moodle database servers
+	\end{itemize}
+
+\textbf{Systems Administrator -- GlobalHealth}
 \newline
 \textbf{Sep 2021-May 2022}
-	\begin{itemize}
-		\item Worked with team of sysadmins to assure reliable operations, managed a variety of tickets and projects in a remote-based organization
-		\item Worked with SQL administrators and developers to automate processes involving transfers over FTP
-		\item Migrated packages and patching schedules from PDQ to Kaseya VSA
-		\item Maintained WDS/MDT server, including software compliance and Windows 10 BIOS configuration
-		\item Performed various test restores across Unitrends backup environment
-		\item Implemented and administrated various internal web applications
-		\item Documented procedures in Confluence, tracked ticket progress in Jira 
-	\end{itemize}
-\textbf{IT Systems Administrator -- Oklahoma City Thunder}
+\begin{itemize}
+	\item Collaborated with a team of sysadmins to ensure reliable operations, managed and resolved a variety of tickets and projects in a remote-based organization
+	\item Worked with SQL administrators and developers to automate processes involving transfers over FTP
+	\item Implemented and administered internal web applications
+	\item Conducted test restores across Unitrends backup environment
+	\item Documented procedures in Confluence, tracked ticket progress in Jira 
+\end{itemize}
+
+\textbf{Systems Administrator -- Oklahoma City Thunder}
 \newline
 \textbf{Jan 2018-Aug 2021}
-	\begin{itemize}
+\begin{itemize}
 		\item Systems administrator for network, server, storage, security, and cloud spanning three metro locations
 		\item Worked with diverse array of departments to understand technical needs and implement context-aware and highly-available solutions
-		\item Primary responsibilities:
-			\begin{itemize}
-				\item Windows Active Directory and hybrid Azure environment
-				\item Linux application servers (Ubuntu, CentOS, Red Hat)
-				\item AWS products: EC2, S3, IAM, Route 53, policies and management
-				\item SAN management and configuration (EqualLogic, EMC Unity)
-				\item Datacenter upkeep, equipment installation and decommission
-				\item Data reliability: Veeam backups, disaster recovery planning
-				\item Security monitoring and response: configured Rapid7 InsightIDR SIEM, monitored and mitigated host vulnerabilities using Rapid7 InsightVM
-			\end{itemize}
-		\item Various projects:
-			\begin{itemize}
-				\item Created and maintained Windows 10 image, maintained GPOs and customizations for security and user-friendliness
-				\item Restructured Active Directory and Group Policy to simplify usage and reduce troubleshooting
-				\item Wrote modular PowerShell function to integrate into automated PDQ deployment as part of WDS/MDT task sequence
-				\item Upgraded Exchange hybrid server and AD FS to Windows Server 2019
-				\item Restructured Veeam: centralized backup jobs from agent-based to console-based 
-				\item Migrated virtual machine environment from Hyper-V to VMware ESXi cluster 
-				\item Migrated large video storage library on end-of-life SAN to Dell EMC Unity
-				\item Implemented SSL certs on Linux web servers
-				\item Redesigned network infrastructure in shared IDF between Thunder, arena, and NBA
-			\end{itemize}
-		\item Directed infrastructure setup and tear down for Thunder live events:
-			\begin{itemize}
-				\item Managed and trained game day employees
-				\item Maintained equipment and data connections for game time and stats to scoreboard, TV trucks, and other signage
-				\item Acted as primary point of contact for NBA statistics laptops, referee equipment, and on-prem network infrastructure directly connected to NBA headquarters 
-				\item Regularly tested redundancy, maintained SOPs via shared checklists on Microsoft Planner, coordinated with event-level employees with the goal of eliminating potential technical interruptions during live events
-			\end{itemize}
+		\item Managed Windows Active Directory and hybrid Azure environment, implemented Single Sign-On authentication via AD FS
+		\item Maintained Linux application and web servers: implemented SSL certs, created user accounts
+		\item Administrated AWS cloud infrastructure: EC2, S3, Route 53, secured IAM with two-factor authentication
+		\item Implemented centralized backup strategy using Veeam, which included streamlining backups and creating availability for disaster recovery
+		\item Configured Rapid7 InsightIDR SIEM, monitored and mitigated host vulnerabilities using Rapid7 InsightVM
+		\item Migrated large video storage library from end-of-life SAN to newly-configured Dell EMC Unity
+		\item Migrated virtual machine environment from Hyper-V to VMware ESXi cluster
+		\item Redesigned network infrastructure in shared IDF between Thunder, arena, and NBA 
+\item Directed infrastructure setup and tear down for Thunder live events:
+	\begin{itemize}
+		\item Managed and trained game day employees
+		\item Maintained equipment and data connections for game time and stats to scoreboard, TV trucks, and other signage
+		\item Acted as primary point of contact for NBA statistics laptops, referee equipment, and on-prem network infrastructure directly connected to NBA headquarters
+		\item Regularly tested redundancy and eliminated potential technical interruptions during live events
 	\end{itemize}
+\end{itemize}
+	
 \textbf{Desktop/Application Support -- ECS Federal, LLC}
 \newline
 \textbf{August 2017-January 2018}
-	\begin{itemize}
-		\item Acted as helpdesk contact for nationwide maintenance machine technicians
-		\item Primary desktop roles included ticket coordination, inventory management, and project assistance
-		\item Ensured compliance with USPS-defined security protocol
-		\item Assisted with server and infrastructure moves
-		\item Created Powershell scripts to troubleshoot, parse AD information, and execute remote processes
-	\end{itemize}
+\begin{itemize}
+    \item Assisted with server and infrastructure moves
+    \item Created Powershell scripts to troubleshoot, parse AD information, and execute remote processes
+    \item Ensured compliance with USPS-defined security protocol
+\end{itemize}
+
 \textbf{IT Support Specialist -- Oklahoma Heart Hospital}
 \newline
 \textbf{June 2015-August 2017}
-	\begin{itemize}
-		\item Produced long-term results for end-users in complex IT environment
-		\item Built relationships with doctors and staff to provide informed and context-aware support
-		\item Provided field support for clinical environment, hospital, cath labs, and surgery suites
-			\begin{itemize}
-				\item Supported workstations and laptops with remote access, network, and admin tools
-				\item Communicated with users to understand processes and evaluate IT solutions
-				\item Educated users on standard procedure, security protocol, and newly implemented technologies
-				\item Basic help-desk troubleshooting with Dameware, VNC, RDP
-				\item Tracked and prioritized tickets using ServiceDesk
-				\item Assisted with document creation in Microsoft Office, presentations (including Telepresence) and media conversion/playback
-				\item Network printer troubleshooting and management; deployed printers using PrinterLogic (user-based or security group deployments) and print servers
-				\item Active Directory modifications, creation of test accounts, experience with organizational units for specific-purpose workstations
-				\item Traced and moved network lines, worked with netops team managing VLANs and DNS
-			\end{itemize}		
-		\item Gained server and enterprise data center experience
-			\begin{itemize}
-				\item Assisted with installation and decommissioning of servers; cleaned and organized data center and communication closets
-				\item Managed and deployed thin clients using Xcalibur and Dell WYSE
-				\item Seamlessly replaced LRS paging system from Windows Server 2003 to 2012 R2 and implemented new transmitter infrastructure
-			\end{itemize}
-		\item Troubleshot Citrix Receiver and VM hosts
-		\item Worked with highly-specialized lab, Cerner EMR, and business software
-		\item Escalation point for help desk; experience troubleshooting over phone and in-person
-		\item Front-line of communication and troubleshooting; collected info and worked alongside network, security, clinical, and server administration teams
-		\item Participated and co-coordinated in large installation projects and remodels
-		\item Installed and troubleshot mobile management applications (MobileIron, Airwatch)
-	\end{itemize}
+\begin{itemize}
+	\item Provided on-site field support for clinical environment, hospital, cath labs, and surgery suites
+	\item Supported workstations and laptops with remote access, network, and admin tools
+	\item Traced and moved network lines, worked with netops team managing VLANs and DNS		
+	\item Managed and deployed thin clients using Xcalibur and Dell WYSE
+	\item Worked with highly-specialized lab, Cerner EMR, and business software
+	\item Troubleshot Citrix Receiver and VM hosts
+	\item Seamlessly replaced LRS paging system from Windows Server 2003 to 2012 R2 and implemented new transmitter infrastructure
+	\item Communicated with users to understand processes and evaluate IT solutions
+	\item Educated users on standard procedure, security protocol, and newly implemented technologies
+\end{itemize}
+
+
 \textbf{IT Assistant -- College of Arts \& Sciences, University of Oklahoma}
 \newline
 \textbf{Nov 2013-April 2015}
-	\begin{itemize}
-		\item Worked as student IT support staff for professors, graduate students, and departments
-		\item Provided hardware and software support:
-			\begin{itemize}
-				\item Repaired and supported workstations (PC and Mac) and printers
-				\item Data and password retrieval; data security and erasure
-				\item Provided lab maintenance: restructured, re-wired, \& re-imaged computer lab
-				\item Prepared Linux workstation for scientific instruments (e.g. electron microscope)
-			\end{itemize}
-		\item Gained experience in a dynamic environment providing opportunities for training, self-management, and teamwork across large Norman campus
-	\end{itemize}
+\begin{itemize}
+	\item Worked as student IT support staff for professors, graduate students, and departments
+	\item Provided hardware and hardware support, performed file recovery and secure data erasure
+	\item Re-structured, re-wired, and re-imaged computer lab
+	\item Prepared Linux workstation for scientific instruments (e.g. electron microscope)		
+	\item Gained experience in a dynamic environment providing opportunities for training, self-management, and teamwork across large Norman campus
+\end{itemize}
 
 
 \section{Education}
 \textbf{University of Oklahoma -- Norman, OK}
-	\begin{itemize}
-		\item Bachelor of Arts, Communications
-		\item Minor in Spanish
-		%\item Background in Calculus, Differential Equations, and Linear Algebra
-	\end{itemize}
-%\textbf{Oklahoma State University} 
-	%\begin{itemize}
-		%\item Pursued B.S. in Mechanical Engineering
-	%\end{itemize}
+\begin{itemize}
+	\item Bachelor of Arts, Communications
+	\item Minor in Spanish
+\end{itemize}
 
 
 
